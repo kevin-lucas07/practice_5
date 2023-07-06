@@ -7,11 +7,10 @@ import { Cocinero } from './entities/cocinero.entity';
 export class CocineroService {
 
   private cocineros: Cocinero[]=[
-    // {id:1, identificacion:'1' , nombre:'Uno', direccion:'a',telefono:'123', tipo:1, estado:true},
-    // {id:2, identificacion:'2' , nombre:'Dos', direccion:'b',telefono:'456', tipo:1, estado:true},
-    
-    {id:1, nombre:'Kevin' , sueldo_basico:200, estado:true},
-    {id:2, nombre:'Victor' , sueldo_basico:100, estado:true},
+    {id:1, nombre:'Kevin', sueldo_basico:200, estado:true},
+    {id:2, nombre:'Victor', sueldo_basico:100, estado:true},
+    {id:3, nombre:'Kendi', sueldo_basico:400, estado:true},
+    {id:4, nombre:'Carolina', sueldo_basico:300, estado:false},
   ]
 
   create(createCocineroDto: CreateCocineroDto) {
