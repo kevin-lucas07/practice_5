@@ -37,12 +37,12 @@ jobs:
       env:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
-        docker build -t joancema/docker-graphql:$NEW_VERSION .
-        docker build -t joancema/docker-graphql:latest .
+        docker build -t kevinlucas07/graphql_cheff:$NEW_VERSION .
+        docker build -t kevinlucas07/graphql_cheff:latest .
 # - explicación: Subir imagen al docker hub aplicando el parámetro NEW_VERSION
     - name: Push Docker Image
       env:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
-        docker push joancema/docker-graphql:$NEW_VERSION
-        docker push joancema/docker-graphql:latest
+        docker push kevinlucas07/graphql_cheff:$NEW_VERSION
+        docker push kevinlucas07/graphql_cheff:latest
